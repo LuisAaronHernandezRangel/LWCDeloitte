@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:white;
+    font-family: 'Poppins';
+}
+h1{
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+.container {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;   
+    background: url('./attachments/background.jpeg'); 
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+form{
+    background-color: rgba(34, 34, 59, 0.9);
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    opacity:1;
+}
+/* input {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid gray;
+    background-color:beige; 
+    border-radius: 5px ;
+    font-size: 16px; 
+    width: 250px;
+    } */
+    /*.container {
+    width:40%;
+    padding: 20px;
+    border: 3px solid blueviolet; border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    }*/
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding:40px;
+
+    }
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+textarea{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+select{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="radio"]{ 
+    margin-right: 5px;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 30px;
+}

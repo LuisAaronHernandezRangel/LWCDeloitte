@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey</h1>
+        <p>este es un formulario</p>
+        <br></br>
+        <form>
+            <div class="box">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="pon tu nombre">
+            <br></br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="pon tu correo">
+            <br></br>
+            <label for="age">Age(optional):</label>
+            <input type="text" id="age" name="age" placeholder="pon tu edad">
+            <br></br>
+            <label for="gender">Qué opción describe tu role:</label>
+            <select id="gender" name="gender">
+                <option value="" disabled selected hiden>selecciona un valor</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br></br>
+            <p>would you recommend this to a friend?</p>
+            <label>
+                <input type="radio" name="subscription" value="basic">
+                Basic
+            </label>
+            <label>
+                <input type="radio" name="subscription" value="premium">
+                Premium
+            </label>
+            <br></br>
+            <label for="cosa">Cuál es tu thing favorita:</label>
+            <select id="cosa" name="cosa">
+                <option value="" disabled selected hiden>selecciona un valor</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br></br>
+            <p>My shopping List</p>
+                <label for="milk">Milk</label>
+                <input type="checkbox" name="groceries" id="milk" value="Milk">
+                <label for="bread">Bread</label>
+                <input type="checkbox" name="groceries"id="bread" value="Bread">
+                <label for="eggs">Eggs</label>
+                <input type="checkbox" name="groceries" id="eggs" value="Eggs"><br>
+                <label for="message">Sugerencia o comentario que tenga:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <button>enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
