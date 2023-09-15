@@ -1,0 +1,185 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+h4{
+    margin:10px;
+    color:rgb(22, 22, 126);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+#app-container{ 
+    display: flex;
+    width: 100%; 
+    /* min-height: 100vh;  ya no puede ser min porque sino no va jala el overflow de los subcontainers ya que crece el padre y podefecto el body tiene scroll*/
+    height: 100vh; /*de esta manera el container padre se ve fijado a una altura y entonces los bebes son los que haran overflow */
+}
+#app-container aside{ 
+    width: 200px;
+    background-color: #191919; 
+    color: white;
+}
+#app-container aside .menu{ 
+
+    text-align: right;
+    color: blue;
+    margin: 10px;
+}
+#app-container aside ul{ 
+    list-style: none;
+    margin-bottom: 10px;
+}
+#app-container aside ul li{ 
+    margin: 10px;
+
+}
+#app-container aside button{ 
+    background-color: blue;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    border-color: blue;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#app-container aside div{ 
+    display: flex;
+    align-items: center;
+    margin:5px;
+}
+#app-container aside section{ 
+    display: flex;
+    align-items: center;
+    margin:5px;
+}
+.cuadro1{
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+}
+.cuadro2{
+    background-color: rgb(53, 96, 122);
+    width: 10px;
+    height: 10px;
+}
+.cuadro3{
+    background-color: yellowgreen;
+    width: 10px;
+    height: 10px;
+}
+#app-container .main-container{
+    width: 100%;
+    display: flex;
+    height:100vh;
+}
+
+#app-container .main-container .scroll-effect{
+    max-height: 100vh;
+    width: 300px; 
+    padding: 10px; 
+    display: flex; 
+}
+
+#app-container .main-container .email-feed{
+    width: 100%;
+    background: white; 
+    overflow-y: auto; /*si le quito la y a scroll-y me aparece barra de desplasamiento vertical y h */
+    padding-right: 10px;
+}
+#app-container .main-container .email-feed article{
+    width: 100%;
+    height: 100px;
+    overflow-y: hidden;
+    background: white; 
+    padding-right: 10px;
+}
+#app-container .main-container .email-feed article{
+    padding: 10px;
+    border-bottom: 1px solid #ccc ;
+}
+.navbar{
+    flex-direction: row;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 70px;
+    align-items: center;
+}
+.background2 button{
+    color: grey;
+    background-color: white;
+    border-color: #ccc;
+    border-radius: 10px;
+    padding: 5px;
+}
+#app-container .main-container .email-preview{
+    width: 100%;
+    background: white;
+    overflow: scroll;
+}
+
+hr{
+    height: 3px;
+    margin-bottom: 10px;
+}
+/*pa modificar propiedades del scrolbar*/
+#app-container .main-container .email-feed::-webkit-scrollbar{ 
+    width: 12px;
+}
+
+#app-container .main-container .email-feed::-webkit-scrollbar-track{
+    background: rgba(210, 210, 210, 0.65);
+}
+#app-container .main-container .email-feed::-webkit-scrollbar-thumb{ 
+    border-radius: 20px;
+    background: #ccc;
+}
+
+@media screen and (max-width: 700px) { 
+    #app-container{ 
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        /* min-height: 100vh;  ya no puede ser min porque sino no va jala el overflow de los subcontainers ya que crece el padre y podefecto el body tiene scroll*/
+        height: 100vh; /*de esta manera el container padre se ve fijado a una altura y entonces los bebes son los que haran overflow */
+    }
+    #app-container aside{ 
+        width: 100%;
+    }
+    #app-container .main-container{ 
+        flex-direction: column;
+    }
+    #app-container .main-container .scroll-effect{
+       
+        width: 100%; 
+ }
+    #app-container .main-container .email-feed{ 
+        height: 50vh;
+    } 
+    #app-container .main-container .email-preview{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    #app-container .main-container{ 
+        flex-direction: column;
+    }
+    #app-container .main-container .scroll-effect{
+       
+        width: 100%; 
+ }
+    #app-container .main-container .email-feed{ 
+        height: 50vh;
+    } 
+    #app-container .main-container .email-preview{
+        height: 50vh;
+    }
+}
