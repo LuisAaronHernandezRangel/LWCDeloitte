@@ -1,0 +1,55 @@
+#main-container .email-feed{
+    width: 400px;
+    min-width: 400px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+#main-container .email-feed::-webkit-scrollbar{
+    width: 8px;
+}
+
+#main-container .email-feed::-webkit-scrollbar-track{
+    background-color: #f0f0f0;
+}
+
+#main-container .email-feed::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+#main-container .email-feed .email-item{
+    display: flex;
+    padding: 18px;
+    gap: 8px;
+    border-bottom: 1px solid #f0f0f0;
+    border-left: 8px solid transparent;
+}
+
+#main-container .email-feed .email-item.unseen-email{
+    border-left: 8px solid #209CFC;
+}
+
+#main-container .email-feed .email-item .email-thumb img{
+    width: 45px;
+    border-radius: 100%;
+}
+
+#main-container .email-feed .email-item .email-description{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-container .email-feed .email-item .email-description .recipient{
+    color: #979797;
+    font-weight: 600;
+}
+
+#main-container .email-feed .email-item .email-description .title{
+    font-size: 19px;
+}
+
+#main-container .email-feed .email-item .email-description .description{
+    font-size: 15px;
+    margin-top: 5px;
+}

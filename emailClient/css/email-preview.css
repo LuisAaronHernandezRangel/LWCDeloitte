@@ -1,0 +1,48 @@
+#main-container .email-preview{
+    width: 100%;
+    background-color: #fff;
+}
+
+#main-container .email-preview .email-header{
+    padding: 25px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-container .email-preview .email-header .content h2{
+    font-size: 27px;
+}
+
+#main-container .email-preview .email-header .content p .recipient-name{
+    color: #209CFC;
+}
+
+#main-container .email-preview .email-header .content p .email-date{
+    color: #ACACAC;
+}
+
+#main-container .email-preview .email-header .actions{
+    display: flex;
+    height: 35px;
+    gap: 10px;
+    width: 300px;
+}
+
+#main-container .email-preview .email-header .actions button{
+    width: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: 1px solid #f0f0f0;
+    color: #979797;
+    cursor: pointer;
+}
+
+#main-container .email-preview .email-content{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
