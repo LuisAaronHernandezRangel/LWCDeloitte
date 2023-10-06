@@ -1,0 +1,12 @@
+<template>
+    <lightning-datatable
+        key-field="id"
+        data={data}
+        columns={columns}
+        onrowaction={handleRowActions}
+    ></lightning-datatable>
+    <template if:true={displayModal}>
+        <c-modal-table></c-modal-table>
+    </template>
+    
+</template>
